@@ -45,12 +45,15 @@ public class Cigar {
 	}
 
 	/**
-	 * @param name the name to set
+	 * @param the name you would like to set the cigar
+	 * @return true if set, false is failed to set
 	 */
-	public void setName(String name) {
-		if (name.trim().isEmpty()) {
+	public boolean setName(String name) {
+		if (!name.trim().isEmpty()) {
 			this.name = name;
+			return true;
 		}
+		return false;
 	}
 
 	/**
@@ -61,7 +64,7 @@ public class Cigar {
 	}
 
 	/**
-	 * @param shape the shape enum of the cigar
+	 * @param set the shape enum of the cigar
 	 */
 	public void setShape(Shape shape) {
 		this.shape = shape;
