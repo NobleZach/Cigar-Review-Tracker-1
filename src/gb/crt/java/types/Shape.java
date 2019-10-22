@@ -10,60 +10,55 @@ public enum Shape {
 	/**************************
 	 * Shapes
 	 **************************/
-	CHISEL("Chisel","Figurado"),
-	CHURCHILL("Churchill", "Parejo"),
-	CIGARILLOS("Cigarillos", "Parejo"),
+	CHISEL("Chisel"),
+	CHURCHILL("Churchill"),
+	CIGARILLOS("Cigarillos"),
 
 	// Corona's
-	CORONA("Corona", "Parejo"),
-	CORONA_EXTRA("Corona Extra", "Parejo"),
-	CORONA_GORDA("Corona Gorda", "Parejo"),
-	CORONA_GRANDE("Corona Grande", "Parejo"),
-	DOUBLE_CORONA("Double Corona", "Parejo"),
-	GIANT_CORONA("Giant Corona", "Parejo"),
-	GRAN_CORONA("Gran Corona", "Parejo"),
-	PETIT_CORONA("Petit Corona", "Parejo"),
-	LONG_CORONA("Long Corona", "Parejo"),
+	CORONA("Corona"),
+	CORONA_EXTRA("Corona Extra"),
+	CORONA_GORDA("Corona Gorda"),
+	CORONA_GRANDE("Corona Grande"),
+	DOUBLE_CORONA("Double Corona"),
+	GIANT_CORONA("Giant Corona"),
+	GRAN_CORONA("Gran Corona"),
+	PETIT_CORONA("Petit Corona"),
+	LONG_CORONA("Long Corona"),
 
-	GIANT("Giant", "Parejo"),
-	GORDO("Gordo", "Parejo"),
-	GORDITO("Gordito", "Parejo"),
-	LANCERO("Lancero", "Parejo"),
-	LONSDALE("Lonsdale", "Parejo"),
+	GIANT("Giant"),
+	GORDO("Gordo"),
+	GORDITO("Gordito"),
+	LANCERO("Lancero"),
+	LONSDALE("Lonsdale"),
 	
 	// Panatela's
-	PANATELA("Panatela", "Parejo"),
-	SHORT_PANATELA("Short Panatela", "Parejo"),
-	SLIM_PANATELA("Slim Panatela", "Parejo"),
-	SMALL_PANATELA("Small Pantela", "Parejo"),
-	LONG_PANATELA("Long Panatela", "Parejo"),
+	PANATELA("Panatela"),
+	SHORT_PANATELA("Short Panatela"),
+	SLIM_PANATELA("Slim Panatela"),
+	SMALL_PANATELA("Small Pantela"),
+	LONG_PANATELA("Long Panatela"),
 	
-	PERFECTO("Perfecto", "Figurado"),
-	PRESIDENTE("Presidente", "Parejo"),
-	PYRAMID("Pyramid", "Figurado"),
-	ROBUSTO("Robusto", "Parejo"),
-	ROTHSCHILD("Rothschild", "Parejo"),
-	TORO("Toro", "Parejo"),
-	TORPEDO("Torpedo", "Figurado"),
+	PERFECTO("Perfecto"),
+	PRESIDENTE("Presidente"),
+	PYRAMID("Pyramid"),
+	ROBUSTO("Robusto"),
+	ROTHSCHILD("Rothschild"),
+	TORO("Toro"),
+	TORPEDO("Torpedo"),
 	;
 
 	/**************************
 	 * Constructors
 	 **************************/
-	private final String name;
 	private final String shape;
 	
-	Shape(String name, String shape) {
-		this.name = name;
+	Shape(String shape) {
 		this.shape = shape;
 	}
 
 	/**************************
 	 * Getters
 	 **************************/
-	public String getName() {
-		return this.name;
-	}
 	
 	public String getShape() {
 		return this.shape;
