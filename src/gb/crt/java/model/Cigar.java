@@ -12,17 +12,18 @@ public class Cigar {
 	/**************************
 	 * Fields
 	 **************************/
-
 	private String name;
 	private Shape shape;
-	private int ringGauge;
+	private int gauge;
+	private double length;
 
 	/**************************
 	 * Constructors
 	 **************************/
 
 	public Cigar(String name, Shape shape) {
-
+		this.name = name;
+		this.shape = shape;
 	}
 
 	/**************************
@@ -31,7 +32,7 @@ public class Cigar {
 
 	@Override
 	public String toString() {
-		return name;
+		return name + shape + gauge + length;
 	}
 
 	/**************************
@@ -46,7 +47,7 @@ public class Cigar {
 	}
 
 	/**
-	 * @param set the name of the cigar.
+	 * @param the name of the cigar.
 	 * @return true if set, false is failed to set.
 	 */
 	public boolean setName(String name) {
@@ -58,30 +59,30 @@ public class Cigar {
 	}
 
 	/**
-	 * @return returns the shape enum of the cigar.
+	 * @return the shape enum of the cigar.
 	 */
 	public Shape getShape() {
 		return shape;
 	}
 
 	/**
-	 * @param set the shape enum of the cigar.
+	 * @param the shape enum of the cigar.
 	 */
 	public void setShape(Shape shape) {
 		this.shape = shape;
 	}
 
 	/**
-	 * @return returns the ring gauge of the cigar.
+	 * @return the ring gauge of the cigar.
 	 */
 	public int getRingGauge() {
-		return ringGauge;
+		return gauge;
 	}
 
 	/**
-	 * @param sets the ring gauge of the cigar.
+	 * @param the ring gauge of the cigar.
 	 */
-	public void setRingGauge(int ringGauge) {
-		this.ringGauge = ringGauge;
+	public void setRingGauge(int gauge) {
+		this.gauge = gauge;
 	}
 }
