@@ -60,7 +60,7 @@ public enum Shape {
 	 * Getters
 	 **************************/
 	
-	public String getShape() {
+	public String toString() {
 		return this.shape;
 	}
 }

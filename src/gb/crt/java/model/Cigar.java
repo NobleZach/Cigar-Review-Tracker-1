@@ -32,7 +32,7 @@ public class Cigar {
 
 	@Override
 	public String toString() {
-		return name + shape + gauge + length;
+		return "Name: " + name + "\nShape: " + shape.toString() + "\nSize: " + length + "x" + gauge;
 	}
 
 	/**************************
