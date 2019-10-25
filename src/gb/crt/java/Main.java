@@ -18,14 +18,18 @@ import javafx.stage.WindowEvent;
 public class Main extends Application {
 
 	/**************************
+	 * Fields
+	 **************************/
+	private Stage primaryStage;
+	private Preferences pref = Preferences.userRoot().node(this.getClass().getName());
+
+	/**************************
 	 * Constants
 	 **************************/
-
+	// Application constants
 	public static final String APPLICATION_NAME = "Cigar-Review-Tracker";
-	private Stage primaryStage;
 
 	// Preference constants
-	private Preferences pref = Preferences.userRoot().node(this.getClass().getName());
 	private static final String WINDOW_POSITION_X = "Window_Position_X";
 	private static final String WINDOW_POSITION_Y = "Window_Position_Y";
 	private static final String WINDOW_WIDTH = "Window_Width";
@@ -60,7 +64,7 @@ public class Main extends Application {
 		primaryStage.getIcons().add(new Image("/gb/crt/resources/icons/ApplicationIcon.png"));
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
+
 		// Load previous sessions window cords and size from preferences.
 		primaryStage.setX(pref.getDouble(WINDOW_POSITION_X, DEFAULT_X));
 		primaryStage.setY(pref.getDouble(WINDOW_POSITION_Y, DEFAULT_Y));
@@ -69,7 +73,7 @@ public class Main extends Application {
 
 		this.primaryStage = primaryStage;
 	}
-	
+
 	@Override
 	public void stop() {
 		// Saving window cords and size to preferences.
