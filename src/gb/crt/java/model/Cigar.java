@@ -13,6 +13,7 @@ public class Cigar {
 	 * Fields
 	 **************************/
 	private String name;
+	private String brand;
 	private Shape shape;
 	private int gauge;
 	private double length;
@@ -20,7 +21,6 @@ public class Cigar {
 	/**************************
 	 * Constructors
 	 **************************/
-
 	public Cigar(String name, Shape shape) {
 		this.name = name;
 		this.shape = shape;
@@ -29,7 +29,6 @@ public class Cigar {
 	/**************************
 	 * Methods
 	 **************************/
-
 	@Override
 	public String toString() {
 		return "Name: " + name + "\nShape: " + shape.toString() + "\nSize: " + length + "x" + gauge;
@@ -84,5 +83,19 @@ public class Cigar {
 	 */
 	public void setRingGauge(int gauge) {
 		this.gauge = gauge;
+	}
+
+	/**
+	 * @return the brand of the cigar.
+	 */
+	public String getBrand() {
+		return brand;
+	}
+
+	/**
+	 * @param the brand of the cigar.
+	 */
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
 }
