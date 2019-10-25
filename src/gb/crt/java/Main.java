@@ -40,7 +40,7 @@ public class Main extends Application {
 		System.out.println("* Starting " + APPLICATION_NAME);
 		System.out.println("*********************************");
 
-		Parent root = FXMLLoader.load(getClass().getResource("/gb/crt/resources/views/MainView.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/gb/crt/java/gui/MainView.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add("/gb/crt/resources/css/stylesheet.css");
 		primaryStage.setTitle(APPLICATION_NAME);
