@@ -53,10 +53,6 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		System.out.println("*********************************");
-		System.out.println("* Starting " + APPLICATION_NAME);
-		System.out.println("*********************************");
-
 		Parent root = FXMLLoader.load(getClass().getResource("/gb/crt/java/gui/MainView.fxml"));
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add("/gb/crt/resources/css/stylesheet.css");
